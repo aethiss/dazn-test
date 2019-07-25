@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow, mount } from "enzyme"
+import { MemoryRouter } from 'react-router-dom'
 
 import App from './App'
 
@@ -9,8 +10,9 @@ const mySpy = jest.spyOn(api, 'searchMovie').mockImplementation(() => {
 })
 
 const mockProps = {
-  stringSearch: '',
-  searchResult: []
+  history: {
+    push: jest.fn()
+  },
 }
 
 describe('@App', () => {
@@ -21,7 +23,9 @@ describe('@App', () => {
     })
     it('should render home component', () => {
       const wrapper = mount(
-        <App {...mockProps} />
+        <MemoryRouter>
+          <App {...mockProps} />
+        </MemoryRouter>
       )
       expect(wrapper.find('.HomeContainer').length).toBe(1)
     })

@@ -1,0 +1,26 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*height: 300px;*/
+}
+
+.box {
+  width: 97%;
+  margin: 5px;
+  text-align: center;
+}
+
+.box img {
+  max-width: 60%;
+}
+
+.movie-title {
+  font-weight: bold;
+}
+
+.movie-rating {
+  line-height: 1px;
+  padding-top: 5px;
+}
