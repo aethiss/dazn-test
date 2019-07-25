@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
+import { Switch, Route, withRouter } from 'react-router-dom'
 
+import Header from './common/header/Header'
 import Home from './container/home/Home'
-import Header from "./common/header/Header"
+import Movie from './container/movie/Movie'
 
 import { searchMovie, generateRequestUrl } from '../coreAPI/themoviedbAPI'
 
-export default class App extends Component {
-
+class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -25,6 +26,7 @@ export default class App extends Component {
             stringSearch: strFromSearch,
             searchResult: res.results || []
           })
+          this.props.history.push("/") // reset home page in case i'm on movie details
         }
       })
     }
@@ -35,9 +37,16 @@ export default class App extends Component {
       <div>
         <Header updateSearch={this.updateSearch} />
         <main>
-          <Home {...this.state}/>
+          <Switch>
+            <Route exact path='/' render={() => (
+              <Home {...this.state}/>
+            )}/>
+            <Route path='/movie/:movieId' component={Movie}/>
+          </Switch>
         </main>
       </div>
     )
   }
 }
+
+export default withRouter(App)

@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, mount } from 'enzyme'
+import { shallow } from 'enzyme'
 
 import Movies from '../Movies'
 
@@ -18,6 +18,10 @@ describe('@Movies', () => {
     it('should render default Movie list detail', () => {
       const component = shallow(<Movies {...props} />)
       expect(component).toMatchSnapshot()
+    })
+    it('should link/redirect to the Movie full details link', () => {
+      const component = shallow(<Movies {...props} />)
+      expect(component.find('.link').props().to).toBe('/movie/1234')
     })
   })
 })

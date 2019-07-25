@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`@Movies render should render default Movie list detail 1`] = `
-<div>
+<Link
+  className="link"
+  to="/movie/1234"
+>
   <div
     className="movie-image"
   >
@@ -24,5 +27,5 @@ exports[`@Movies render should render default Movie list detail 1`] = `
       vote_average
     </span>
   </div>
-</div>
+</Link>
 `;
