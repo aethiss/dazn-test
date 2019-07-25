@@ -1,0 +1,37 @@
+body {
+  /*background-color: rgba(46, 46, 47, 0.71);*/
+}
+
+.HomeContainer {
+  display: flex;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  flex: 1 15%;
+  padding: 5px;
+}
+
+.movie-image img {
+  max-width: 100%;
+}
+
+.movie-info {
+  margin-top: auto;
+}
+
+.movie-title {
+  display: flex;
+  font-weight: bold;
+}
+
+/* mobile */
+@media (max-width: 720px) {
+  .movie-card {
+    flex: 1 25%;
+  }
+}
