@@ -1,0 +1,27 @@
+.site-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #000000;
+}
+
+.header-right {
+  width: 19%;
+}
+
+.header-middle {
+  width: 79%;
+  justify-self: center;
+  align-self: center;
+}
+
+.header-logo {
+  max-height: 55px;
+}
+
+.header-searchbox {
+  /*position: relative; !* or absolute *!*/
+  /*top: 50%;*/
+  /*left: 40%;*/
+
+}

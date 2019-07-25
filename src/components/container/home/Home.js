@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import Movies from "../../presentational/movies/Movies"
 import { searchMovie, generateRequestUrl } from '../../../coreAPI/themoviedbAPI'
 
+import style from "./Home.css"
 
 export default class Home extends Component {
 
