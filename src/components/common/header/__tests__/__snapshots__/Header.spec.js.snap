@@ -6,6 +6,11 @@ exports[`@Header render should render defaultheader 1`] = `
   role="navigation"
 >
   <div
+    className="header-middle"
+  >
+    <SearchBox />
+  </div>
+  <div
     className="header-right"
   >
     <img

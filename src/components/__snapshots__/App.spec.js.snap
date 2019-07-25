@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@App @render Default render 1`] = `
+<div>
+  <Header
+    updateSearch={[Function]}
+  />
+  <main>
+    <Home
+      searchResult={Array []}
+      stringSearch=""
+    />
+  </main>
+</div>
+`;

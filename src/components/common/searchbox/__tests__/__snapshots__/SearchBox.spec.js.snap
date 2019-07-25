@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@SearchBox renders should render a input form 1`] = `
+<input
+  onKeyDownCapture={[Function]}
+  placeholder="Search"
+  type="search"
+/>
+`;
