@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@Home render should render default home page 1`] = `
+<div
+  className="HomeContainer"
+>
+  <div>
+    Loading ...
+  </div>
+</div>
+`;
