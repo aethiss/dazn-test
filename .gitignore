@@ -1,4 +1,6 @@
 /node_modules
 /dist
+/assets/desktop.png
+/assets/mobile.png
 
 .idea
