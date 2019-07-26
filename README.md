@@ -1,4 +1,4 @@
-# Dazn Test (small react app)
+# Dazn Test (Movies Search Web App)
 >This is a small react app for search movies/tv series and read descriptions/details about it.
   - React 16
   - Webpack 4
@@ -6,8 +6,8 @@
   - responsive css
   - TheMovieDbAPI (https://www.themoviedb.org)
   
-![mobile](/Users/aethiss/Web/Tests/dazn-test/assets/mobile.png)
-![desktop](/Users/aethiss/Web/Tests/dazn-test/assets/desktop.png)
+![mobile](https://github.com/aethiss/dazn-test/blob/master/assets/mobile.png)
+![desktop](https://github.com/aethiss/dazn-test/blob/master/assets/desktop.png)
 
 ### How to install and start !
   - Clone locally this repo
@@ -131,10 +131,14 @@ TODO: add design/style if error or timeout
 
 ### Git Strategy
 
-I created with the first commit the base app.
+I created with the firsts commits the base app.
 
 All of the milestone are tagged (https://git-scm.com/book/en/v2/Git-Basics-Tagging)
 
 Each new pieces is a new pull request, tested and then merged into the master branch. (https://help.github.com/en/articles/about-pull-requests)
 
-closed pull requests list: https://github.com/aethiss/dazn-test/pulls?q=is%3Apr+is%3Aclosed
+Merged pull requests list: https://github.com/aethiss/dazn-test/pulls?q=is%3Apr+is%3Aclosed
+
+
+--------------
+Author: Enzo D'Onofrio - Time spent about 3h something.
